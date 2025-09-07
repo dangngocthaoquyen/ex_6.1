@@ -7,26 +7,26 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
-<h1>Join our email list</h1>
-<p>To join our email list, enter your name and email address below.</p>
+<div class="form-card">
+    <h1>Join our email list</h1>
+    <p>To join our email list, enter your name and email address below.</p>
 
-<form action="emailList" method="post">
-    <input type="hidden" name="action" value="add"/>
+    <form action="emailList" method="post">
+        <input type="hidden" name="action" value="add"/>
 
-    <label>Email:</label>
-    <input type="email" name="email" required/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required/>
 
-    <label>First Name:</label>
-    <input type="text" name="firstName" required/>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required/>
 
-    <label>Last Name:</label>
-    <input type="text" name="lastName" required/>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required/>
 
-    <input type="submit" value="Join Now" id="submit"/>
-</form>
-
+        <button type="submit" id="submit">Join Now</button>
+    </form>
+</div>
 
 <%@ include file="includes/footer.jsp" %>
 </body>
 </html>
-
