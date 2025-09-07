@@ -7,24 +7,32 @@
     <link rel="stylesheet" href="styles/main.css" type="text/css"/>
 </head>
 <body>
-<h1>Thanks for joining our email list</h1>
+<div class="result-card">
+    <h1>Thanks for joining our email list</h1>
 
-<p>Here is the information that you entered:</p>
+    <p>Here is the information that you entered:</p>
 
-<label>Email:</label>
-<span>${user.email}</span><br/>
-<label>First Name:</label>
-<span>${user.firstName}</span><br/>
-<label>Last Name:</label>
-<span>${user.lastName}</span><br/>
+    <div class="info">
+        <label>Email:</label>
+        <span>${user.email}</span>
+    </div>
+    <div class="info">
+        <label>First Name:</label>
+        <span>${user.firstName}</span>
+    </div>
+    <div class="info">
+        <label>Last Name:</label>
+        <span>${user.lastName}</span>
+    </div>
 
-<p>To enter another email address, click on the Back
-    button in your browser or the Return button below.</p>
+    <p>To enter another email address, click on the Back
+        button in your browser or the Return button below.</p>
 
-<form action="emailList" method="get">
-    <input type="hidden" name="action" value="join"/>
-    <input type="submit" value="Return"/>
-</form>
+    <form action="emailList" method="get">
+        <input type="hidden" name="action" value="join"/>
+        <button type="submit" class="return-btn">Return</button>
+    </form>
+</div>
 
 <%@ include file="includes/footer.jsp" %>
 </body>
