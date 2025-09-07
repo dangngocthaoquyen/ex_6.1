@@ -85,3 +85,57 @@ body {
     background: linear-gradient(135deg, #e68a00, #cc7005);
     transform: translateY(-2px);
 }
+/* Card kết quả */
+.result-card {
+    max-width: 500px;
+    width: 100%;
+    padding: 25px 30px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Tiêu đề trong result */
+.result-card h1 {
+    text-align: center;
+    color: #004080;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 8px;
+}
+
+/* Các dòng thông tin */
+.result-card .info {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.result-card label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333;
+}
+
+/* Nút return */
+.return-btn {
+    display: block;
+    width: 100%;
+    background: #004080;
+    color: #fff;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.return-btn:hover {
+    background: #0059b3;
+}
+
