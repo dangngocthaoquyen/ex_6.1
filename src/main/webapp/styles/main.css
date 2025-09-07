@@ -1,40 +1,38 @@
-/* Toàn trang */
+/* Căn giữa toàn bộ body */
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #f7f9fc;
-    color: #333;
 }
 
-/* Form card */
+/* Thẻ chứa form */
 .form-card {
-    max-width: 400px;
-    width: 100%;
-    padding: 25px 30px;
     background: #fff;
+    padding: 25px 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
 }
 
-/* Tiêu đề trong form */
+/* Tiêu đề */
 .form-card h1 {
     text-align: center;
     color: #004080;
-    font-size: 1.8em;
-    margin-bottom: 15px;
+    font-size: 1.6em;
+    margin-bottom: 10px;
     border-bottom: 2px solid #004080;
     padding-bottom: 8px;
 }
 
-/* Mô tả trong form */
+/* Mô tả */
 .form-card p {
     text-align: center;
     margin-bottom: 20px;
@@ -42,7 +40,7 @@ body {
     font-size: 14px;
 }
 
-/* Label trong form */
+/* Label */
 .form-card label {
     display: block;
     font-weight: bold;
@@ -60,19 +58,16 @@ body {
     border-radius: 6px;
     font-size: 14px;
     margin-bottom: 14px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-card input[type="text"]:focus,
-.form-card input[type="email"]:focus {
+.form-card input:focus {
     border-color: #004080;
     outline: none;
     box-shadow: 0 0 6px rgba(0, 64, 128, 0.4);
 }
 
-/* Nút */
-.form-card #submit {
-    display: block;
+/* Nút submit */
+#submit {
     width: 100%;
     background: linear-gradient(135deg, #f59e0b, #d97706);
     color: #fff;
@@ -82,57 +77,11 @@ body {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: transform 0.2s ease, background 0.3s ease;
     margin-top: 10px;
+    transition: 0.3s;
 }
 
-.form-card #submit:hover {
+#submit:hover {
     background: linear-gradient(135deg, #e68a00, #cc7005);
     transform: translateY(-2px);
-}
-
-/* Trang kết quả */
-.result-card {
-    max-width: 500px;
-    width: 100%;
-    padding: 25px 30px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Tiêu đề kết quả */
-.result-card h1 {
-    color: #004080;
-    font-size: 1.6em;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #004080;
-    padding-bottom: 8px;
-}
-
-/* Nội dung kết quả */
-.result-card p {
-    margin: 10px 0;
-    font-size: 14px;
-    color: #333;
-}
-
-/* Nút return */
-.result-card input[type="submit"],
-.result-card button {
-    background: #004080;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 15px;
-}
-
-.result-card input[type="submit"]:hover,
-.result-card button:hover {
-    background: #0059b3;
 }
