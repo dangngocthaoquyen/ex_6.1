@@ -14,18 +14,19 @@
     <input type="hidden" name="action" value="add"/>
 
     <label>Email:</label>
-    <input type="email" name="email" required/><br/>
+    <input type="email" name="email" required/>
 
     <label>First Name:</label>
-    <input type="text" name="firstName" required/><br/>
+    <input type="text" name="firstName" required/>
 
     <label>Last Name:</label>
-    <input type="text" name="lastName" required/><br/>
+    <input type="text" name="lastName" required/>
 
-    <label>&nbsp;</label>
     <input type="submit" value="Join Now" id="submit"/>
 </form>
+
 
 <%@ include file="includes/footer.jsp" %>
 </body>
 </html>
+
